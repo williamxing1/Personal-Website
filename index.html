@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Landing Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_outward" />
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="font-bold text-xl ml-2 text-gray-800">William Xing</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-6 text-gray-600">
+                <a class="hover:text-red-500" href="#">Home</a>
+                <a class="hover:text-red-500" href="#projects">Projects</a>
+                <a class="hover:text-red-500 flex" target="_blank" href="/resume.pdf" type="application/pdf">Resume <span class="material-symbols-outlined">arrow_outward</span></a>
+                <a class="hover:text-red-500 flex" target="_blank" href="https://github.com/supersauce189">Github <span class="material-symbols-outlined">arrow_outward</span></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+    <section class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-16 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2">
+                <h1 class="text-5xl font-bold leading-tight my-4">Hi! I'm William Xing.</h1>
+                <p class="text-gray-300 mb-8">I’m a student, coder, and athlete who loves turning big ideas into real projects. Whether I’m building web apps, experimenting with machine learning models, or designing sleek websites, I enjoy solving problems and learning new tools along the way. Outside of coding, I’m passionate about sports—basketball, cycling, running, and even training for triathlons. I believe in pushing myself both mentally and physically, and I carry that same energy into academics, research, and personal projects. I’m curious about everything from artificial intelligence to cultural studies, and I’m always working on becoming more efficient, more creative, and more impactful. My long-term goals? To build innovative technologies, grow as a leader, and create work that makes a real difference.</p>
+                <button class="bg-red-500 text-white px-8 py-3 rounded-lg">View My Work</button>
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0 ml-40">
+                <img alt="A man with glasses looking thoughtfully" class="w-full h-auto rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBlUWdSlQ-O74LTwW1Ag9TSWEcgJLtp-_YAmRzu4tY1afO9myLoLFuApJY4JXpGzKkRMIOPqht_I_mZWn1JbPFr2NCsjlbIMYX1zv8li84pPh9ZVhIj7Axb8Oq9T-9e78TLkWCrSyOcjsBrgjmt_SWqcQBMm3a4G1DcN2EEgs9nU77t09lTMCNmGttPlo7NWy-PMqFn48D_4tPco0PLzFSl2kLCgJeRf4uL20KrgY08CIVXERhrvotezpKJN-W2p9qEREGDmCXnJs"/>
+            </div>
+        </div>
+    </section>
+    <section class="bg-blue-50 py-20"  id="projects">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 inline-block">Projects</h2>
+                <div class="h-1 w-24 bg-red-500 mx-auto mt-2"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img alt="Project 1" class="w-full h-56 object-cover" src="tmbball.png"/>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">TM Basketball Website</h3>
+                        <p class="text-sm text-gray-500 mb-4">Feb 2025 - Present</p>
+                        <p class="text-gray-600 text-base">Designed and developed a website for TM Basketball, highlighting team offerings (camps, clincs, practices, etc.), and photos + videos, helping attract new customers weekly.</p>
+                        <a href="https://www.eganrunning.com/" target="_blank" class="bg-red-500 text-white px-6 py-2 rounded-lg mt-4 inline-block">Visit Website</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img alt="Project 2" class="w-full h-56 object-cover" src="eganrunning.png"/>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">School Mile Running Website</h3>
+                        <p class="text-sm text-gray-500 mb-4">Sep 2024 - Mar 2025</p>
+                        <p class="text-gray-600 text-base">Created a school mile running website to showcase items, track progress and highlight student achievements, making performance data easy to access and share.</p>
+                        <a href="https://www.eganrunning.com/" target="_blank" class="bg-red-500 text-white px-6 py-2 rounded-lg mt-4 inline-block">Visit Website</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img alt="Project 3" class="w-full h-56 object-cover" src="water_contamination.jpg"/>
+                    <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">Water Pollution Research Paper</h3>
+                    <p class="text-sm text-gray-500 mb-4">Jun 2025 - Sep 2025</p>
+                    <p class="text-gray-600 text-base">Conducted a large-scale water contamination research study, integrating a variety of datasets to predict pollutant risks and advance environmental science with machine learning.</p>
+                    <div class="flex gap-4">
+                        <a class="bg-red-500 text-white px-6 py-2 rounded-lg mt-4 md:mt-6">View Paper</a>
+                        <a href="https://github.com/BrennanLagasse/Water-Contamination-Prediction" target="_blank" class="bg-red-500 text-white px-6 py-2 rounded-lg mt-4 md:mt-6">View Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center">
+                <span class="font-bold text-lg">William Xing</span>
+            </div>
+            <div class="flex space-x-6 mt-4 md:mt-0 text-gray-400">
+                <a>Email: williamlelexing@gmail.com</a>
+                <a>Phone Number: +1 (408)-982-6565</a>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>
