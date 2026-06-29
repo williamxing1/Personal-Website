@@ -23,6 +23,7 @@
             <div class="hidden md:flex items-center space-x-6 text-gray-600">
                 <a class="hover:text-red-500" href="#">Home</a>
                 <a class="hover:text-red-500" href="#projects">Projects</a>
+                <a class="hover:text-red-500" href="#publications">Publications</a>
                 <a class="hover:text-red-500 flex" target="_blank" href="/resume.pdf" type="application/pdf">Resume <span class="material-symbols-outlined">arrow_outward</span></a>
                 <a class="hover:text-red-500 flex" target="_blank" href="https://github.com/williamxing1">Github <span class="material-symbols-outlined">arrow_outward</span></a>
             </div>
@@ -44,69 +45,112 @@
     <section class="bg-blue-50 py-20"  id="projects">
         <div class="container mx-auto px-6">
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-800 inline-block">Projects</h2>
+                <h2 class="text-4xl font-bold text-gray-800 inline-block mt-2">Experience</h2>
                 <div class="h-1 w-24 bg-red-500 mx-auto mt-2"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img alt="Nature" class="w-full h-56 object-cover" src="images/nature.jpeg"/>
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Internship: Stanford</h3>
+                        <p class="text-sm text-gray-500 mb-4">Jan 2026 - Present</p>
+                        <p class="text-gray-600 text-base">Worked with Stanford postdoc Qing Yang to apply machine learning for multi-source satellite flood mapping. I created a full ML pipeline for water body pixel segmentation with a UNet and the modern DeepLabV3 segmentation model and completed another project on rainfall-runoff modeling using a LSTM and transformer.</p>
+                        <div class="flex gap-4 mt-auto pt-6">
+                            <a href="https://github.com/williamxing1/floodplanet-segmentation" target="_blank" class="bg-red-500 text-white px-6 py-2 rounded-lg">View Repo #1</a>
+                            <a href="https://github.com/williamxing1/lstm-runoff-modeling" target="_blank" class="bg-red-500 text-white px-6 py-2 rounded-lg">View Repo #2</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img alt="Opun Logo" class="w-full h-56 object-cover" src="images/opun.jpg"/>
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Internship: Opun AI</h3>
+                        <p class="text-sm text-gray-500 mb-4">Feb 2026 - Present</p>
+                        <p class="text-gray-600 text-base">Interned at Opun AI to build AI / ML features for their Opun app. First, I built a computer vision-based drivers license detection pipeline along with a reference app demonstrating its capabilities. Then, I built a REST API wrapper around Gemini for image and video generation with Fast API and Uvicorn.</p>
+
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img alt="Nature" class="w-full h-56 object-cover" src="images/tts.png"/>
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Internship: PocketFM</h3>
+                        <p class="text-sm text-gray-500 mb-4">Feb 2026 - Present</p>
+                        <p class="text-gray-600 text-base">Interned at PocketFM to research CLAP-based retrieval for expressive Hindi audiobook generation, beating out all existing open-source models. I was the lead author, and the paper was accepted to an <strong>ICML workshop</strong>.</p>
+                        <div class="flex gap-4 mt-auto pt-6">
+                            <a href="/pocketfm_paper.pdf" target="_blank" class="bg-red-500 text-white px-6 py-2 rounded-lg">View Paper</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-20 mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 inline-block mt-2">Projects</h2>
+                <div class="h-1 w-24 bg-red-500 mx-auto mt-2"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img alt="Water Contamination Project" class="w-full h-56 object-cover" src="images/water_contamination.jpg"/>
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Water Pollution Research Paper</h3>
+                        <p class="text-sm text-gray-500 mb-4">Jun 2025 - Jan 2026</p>
+                        <p class="text-gray-600 text-base">Conducted a large-scale water contamination research study, integrating a variety of datasets to achieve SOTA results in arsenic contamination prediction in water. I was the lead author, and the paper was accepted to <strong>AAAI workshop</strong>.</p>
+                        <div class="flex gap-4 mt-auto pt-6">
+                            <a class="bg-red-500 text-white px-6 py-2 rounded-lg" href="/paper.pdf" type="application/pdf" target="_blank">View Paper</a>
+                            <a href="https://github.com/BrennanLagasse/Water-Contamination-Prediction" target="_blank" class="bg-red-500 text-white px-6 py-2 rounded-lg">View Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                     <img alt="Club Basketball Website" class="w-full h-56 object-cover" src="images/tmbball.png"/>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-1">
                         <h3 class="text-xl font-bold text-gray-800 mb-1">TM Basketball Website</h3>
                         <p class="text-sm text-gray-500 mb-4">Feb 2025 - May 2025</p>
                         <p class="text-gray-600 text-base">Designed and developed a website for TM Basketball, highlighting team offerings (camps, clincs, practices, etc.), and photos + videos, helping attract new customers weekly.</p>
-                        <a href="https://www.tmbball.org/" target="_blank" class="bg-red-500 text-white px-6 py-2 rounded-lg mt-4 inline-block">Visit Website</a>
+                        <div class="mt-auto pt-6">
+                            <a href="https://www.tmbball.org/" target="_blank" class="bg-red-500 text-white px-6 py-2 rounded-lg inline-block">Visit Website</a>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                     <img alt="Egan Running Website" class="w-full h-56 object-cover" src="images/eganrunning.png"/>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-1">
                         <h3 class="text-xl font-bold text-gray-800 mb-1">School Mile Running Website</h3>
                         <p class="text-sm text-gray-500 mb-4">Sep 2024 - Mar 2025</p>
                         <p class="text-gray-600 text-base">Created a school mile running website to showcase items, track progress and highlight student achievements, making performance data easy to access and share.</p>
-                        <a href="https://www.eganrunning.com/" target="_blank" class="bg-red-500 text-white px-6 py-2 rounded-lg mt-4 inline-block">Visit Website</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img alt="Water Contamination Project" class="w-full h-56 object-cover" src="images/water_contamination.jpg"/>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-1">Water Pollution Research Paper</h3>
-                        <p class="text-sm text-gray-500 mb-4">Jun 2025 - Jan 2026</p>
-                        <p class="text-gray-600 text-base">Conducted a large-scale water contamination research study, integrating a variety of datasets to achieve SOTA results in arsenic contamination prediction in water. Accepted to AAAI workshop.</p>
-                        <div class="flex gap-4">
-                            <a class="bg-red-500 text-white px-6 py-2 rounded-lg mt-4 md:mt-6" href="/paper.pdf" type="application/pdf" target="_blank">View Paper</a>
-                            <a href="https://github.com/BrennanLagasse/Water-Contamination-Prediction" target="_blank" class="bg-red-500 text-white px-6 py-2 rounded-lg mt-4 md:mt-6">View Github</a>
+                        <div class="mt-auto pt-6">
+                            <a href="https://www.eganrunning.com/" target="_blank" class="bg-red-500 text-white px-6 py-2 rounded-lg inline-block">Visit Website</a>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img alt="Nature" class="w-full h-56 object-cover" src="images/nature.jpeg"/>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-1">Internship: ML in Environmental Science</h3>
-                        <p class="text-sm text-gray-500 mb-4">Jan 2026 - Present</p>
-                        <p class="text-gray-600 text-base">Worked with Stanford postdoc Qing Yang to apply machine learning for multi-source satellite flood mapping. I created a full ML pipeline for water body pixel segmentation with a UNet and the modern DeepLabV3 segmentation model and completed another project on rainfall-runoff modeling using a LSTM and transformer.</p>
-                        <div class="flex gap-4">
-                            <a href="https://github.com/williamxing1/floodplanet-segmentation" target="_blank" class="bg-red-500 text-white px-6 py-2 rounded-lg mt-4 md:mt-6">View Repo #2</a>
-                            <a href="https://github.com/williamxing1/lstm-runoff-modeling" target="_blank" class="bg-red-500 text-white px-6 py-2 rounded-lg mt-4 md:mt-6">View Repo #2</a>
-                        </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-16" id="publications">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-gray-800 inline-block mt-2">Publications</h2>
+                <div class="h-1 w-24 bg-red-500 mx-auto mt-2"></div>
+            </div>
+            <div class="divide-y divide-gray-200 border-y border-gray-200">
+                <article class="py-6 md:flex md:items-center md:justify-between md:gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Expressive Hindi Audiobook Generation with CLAP-Based Retrieval</h3>
+                        <p class="text-gray-500 mt-1">William Xing et al. · ICML Workshop, 2026</p>
                     </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img alt="Opun Logo" class="w-full h-56 object-cover" src="images/opun.jpg"/>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-1">Internship: Opun AI</h3>
-                        <p class="text-sm text-gray-500 mb-4">Feb 2026 - Present</p>
-                        <p class="text-gray-600 text-base">Interned at Opun AI to build AI / ML features for their Opun app. First, I built a complete drivers license detection pipeline using a FastVit backbone, then merging different spatial resolutions with a BiFPN, and a final head to predict heatmaps. Then, I built a REST API wrapper around Gemini for image and video generation with Fast API and Uvicorn.</p>
-                
+                    <a href="/pocketfm_paper.pdf" target="_blank" class="inline-flex items-center text-red-500 font-medium mt-3 md:mt-0 whitespace-nowrap">
+                        View paper <span class="material-symbols-outlined text-lg ml-1">arrow_outward</span>
+                    </a>
+                </article>
+                <article class="py-6 md:flex md:items-center md:justify-between md:gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Predicting Groundwater Arsenic Concentrations Using Graph Neural Networks</h3>
+                        <p class="text-gray-500 mt-1">William Xing et al. · AAAI Workshop, 2026</p>
                     </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img alt="Nature" class="w-full h-56 object-cover" src="images/tts.png"/>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-1">Internship: PocketFM</h3>
-                        <p class="text-sm text-gray-500 mb-4">Feb 2026 - Present</p>
-                        <p class="text-gray-600 text-base">Interned at PocketFM to build a novel text-to-speech (TTS) model for long-form expressive audiobook generation in Hindi.</p>
-                    </div>
-                </div>
+                    <a href="/paper.pdf" target="_blank" class="inline-flex items-center text-red-500 font-medium mt-3 md:mt-0 whitespace-nowrap">
+                        View paper <span class="material-symbols-outlined text-lg ml-1">arrow_outward</span>
+                    </a>
+                </article>
             </div>
         </div>
     </section>
